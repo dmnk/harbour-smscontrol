@@ -1,0 +1,30 @@
+Name: harbour-smscontrol
+Summary: SMS-Control
+Version: 0.9.3
+Release: 1
+Group: Qt/Qt
+URL: http://example.org/
+License: ALL RIGHTS RESERVED
+Sources:
+- '%{name}-%{version}.tar.bz2'
+Description: |-
+  Control your SMS-enabled devices without having to remember the command syntax or building templates on your own.
+Configure: none
+Builder: qtc5
+PkgConfigBR:
+- Qt5Quick
+- Qt5Qml
+- Qt5Core
+- sailfishapp >= 0.0.10
+Requires:
+- sailfishsilica-qt5 >= 0.10.9
+Files:
+- '%{_bindir}'
+- '%{_datadir}/%{name}/qml'
+- '%{_datadir}/applications/%{name}.desktop'
+- '%{_datadir}/icons/hicolor/86x86/apps/%{name}.png'
+- /usr/bin
+- /usr/share/harbour-smscontrol
+- /usr/share/applications
+- /usr/share/icons/hicolor/86x86/apps
+PkgBR: []
